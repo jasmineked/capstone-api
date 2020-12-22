@@ -10,7 +10,8 @@ curl "${API}${URL_PATH}/${ID}" \
 --header "Authorization: Bearer ${TOKEN}" \
 --data '{
     "item": {
-      "name": "'"${NAME}"'"
+      "name": "'"${NAME}"'",
+      "toBePurchased": "'"${TOBEPURCHASED}"'"
     }
   }'
 
