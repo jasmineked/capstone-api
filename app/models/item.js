@@ -5,7 +5,7 @@ const itemSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  toBePurchased: {
+  delayDuration: {
     type: Date,
     required: true
   },
