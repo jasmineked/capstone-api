@@ -11,7 +11,7 @@ curl "${API}${URL_PATH}" \
   --data '{
     "item": {
       "name": "'"${NAME}"'",
-      "delayDuration": "'"${DELAYDURATION}"'"
+      "remindMe": "'"${REMINDME}"'"
     }
   }'
 
