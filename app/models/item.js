@@ -5,8 +5,8 @@ const itemSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  remindMe: {
-    type: Date,
+  price: {
+    type: Number,
     required: true
   },
   owner: {
