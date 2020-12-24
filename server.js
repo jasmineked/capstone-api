@@ -7,7 +7,7 @@ const cors = require('cors')
 const exampleRoutes = require('./app/routes/example_routes')
 const userRoutes = require('./app/routes/user_routes')
 const itemRoutes = require('./app/routes/item_routes')
-const walletRoutes = require('./app/routes/wallet_routes')
+const budgetRoutes = require('./app/routes/budget_routes')
 
 // require middleware
 const errorHandler = require('./lib/error_handler')
@@ -67,6 +67,7 @@ app.use(requestLogger)
 app.use(exampleRoutes)
 app.use(userRoutes)
 app.use(itemRoutes)
+app.use(budgetRoutes)
 // register error handling middleware
 // note that this comes after the route middlewares, because it needs to be
 // passed any error messages from them
