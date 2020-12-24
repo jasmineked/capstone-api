@@ -9,9 +9,9 @@ const budgetSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
-  nowOrLater: {
-    type: Boolean,
-    required: true
+  dueDate: {
+    type: Date,
+    required: false
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,

@@ -12,6 +12,7 @@ curl "${API}${URL_PATH}/${ID}" \
     "budget": {
       "name": "'"${NAME}"'",
       "total": "'"${TOTAL}"'",
+      "nowOrLater": "'"${NOWORLATER}"'",
       "dateDue":"'"${DATEDUE}"'"
     }
   }'
