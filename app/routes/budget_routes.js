@@ -55,9 +55,9 @@ router.delete('/budgets/:id', requireToken, (req, res, next) => {
     .then(handle404)
     .then(budget => {
       // throw an error if current user doesn't own `item`
-      requireOwnership(req, button)
+      requireOwnership(req, budget)
       // delete the item ONLY IF the above didn't throw
-      button.deleteOne()
+      budget.deleteOne()
     })
     // send back 204 and no content if the deletion succeeded
     .then(() => res.sendStatus(204))
